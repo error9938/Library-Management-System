@@ -1,0 +1,315 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+nav {
+  background: #2c3e50;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f1c40f;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 6px #ccc;
+}
+
+input, select {
+  padding: 8px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #3498db;
+  color: white;
+}
+/* ---------- Auth / Login Page (Glass) ---------- */
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+  /* REAL macOS translucent wallpaper look */
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1920") center/cover;
+}
+
+
+/* REAL glass card */
+.auth-card {
+  width: 100%;
+  max-width: 950px;
+  min-height: 420px;
+  border-radius: 26px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  overflow: hidden;
+
+  /* REAL GLASS */
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(25px) saturate(160%);
+  -webkit-backdrop-filter: blur(25px) saturate(160%);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+}
+
+
+/* remove solid background, keep it translucent */
+.auth-left {
+  padding: 28px 34px;
+  background: rgba(246, 246, 246, 0); /* translucent */
+  backdrop-filter: blur(15px);
+}
+
+
+/* right side like card in example */
+.auth-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+
+  /* For premium glass */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+}
+
+.auth-illustration {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* ⭐ full cover */
+  border-radius: 0;        /* clean */
+}
+
+
+/* Top bar inside card */
+.auth-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.brand-main {
+  color: #1a1e53;
+}
+
+.brand-accent {
+  color: #2c3e50;
+}
+
+.auth-top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.muted-text {
+  font-size: 15px;
+  color: #000000;
+}
+
+.outline-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #0d0d0d;
+  background: transparent;
+  color: #080a0c;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.outline-btn:hover {
+  background: #2c3e50;
+  color: white;
+}
+
+/* Body/form section */
+.auth-body {
+  margin-top: 10px;
+}
+
+.auth-title {
+  margin-bottom: 18px;
+  font-size: 26px;
+  color: #222;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+.form-group input {
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+  width: 100%;
+  font-size: 14px;
+  background: #fdfbf6;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2c3e50;
+  box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.12);
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background: #024622;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.primary-btn:hover {
+  background: #172b21;
+}
+
+.link-btn {
+  margin-top: 8px;
+  border: none;
+  background: transparent;
+  color: #01060b;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.status-text {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 770px) {
+  .auth-card {
+    grid-template-columns: 1fr;
+  }
+  .auth-right {
+    display: none;
+  }
+}
+/* Wrapper keeps eye icon inside without stretching box */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 10px; /* space for eye icon */
+}
+
+/* Eye icon styling */
+.toggle-password {
+  position: absolute;
+  right: 0px;
+  top: 55%;
+  transform: translateY(-40%);
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  opacity: 0.7;
+  transition: 0.2s ease;
+}
+
+.toggle-password:hover {
+  opacity: 1;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: #fff; /* white text */
+}
+
+.table th {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 12px;
+  text-align: left;
+  color: #fff;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.table tr:hover {
+  background: rgba(255, 255, 255, 0.10);
+  cursor: pointer;
+}

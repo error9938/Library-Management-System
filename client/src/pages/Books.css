@@ -1,0 +1,32 @@
+/* Prevent table overflow */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table fixed layout */
+.table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* Action column */
+.action-col {
+  width: 140px;
+  text-align: center;
+}
+
+/* Remove button */
+.remove-btn {
+  padding: 6px 14px;
+  border: none;
+  background: #3b82f6;
+  color: rgb(251, 250, 250);
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.remove-btn:hover {
+  background: #2563eb;
+}

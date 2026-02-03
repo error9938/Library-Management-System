@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "sweetalert2": "^11.26.10"
+  }
+}

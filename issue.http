@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/issue/issue
+Content-Type: application/json
+
+{
+  "book_id": 1,
+  "user_id": 1,
+  "due_date": "2025-01-20"
+}
+GET http://localhost:8080/api/issue/all
