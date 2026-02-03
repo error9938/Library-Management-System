@@ -37,3 +37,37 @@ This project helps manage books, users, and issue/return operations in a digital
 
 ## ⚙️ Project Architecture
 
+Frontend (React)
+↓
+REST API
+↓
+Backend (Node.js + Express)
+↓
+MySQL Database
+
+---
+
+## 📂 Folder Structure
+Library-Management-System
+├── client/ # React frontend
+├── server/ # Node.js backend
+├── .gitignore
+└── README.md
+
+---
+
+## 🚀 How to Run the Project
+---
+Frontend
+
+cd client
+npm install
+npm start
+
+---
+Backend
+
+cd server
+npm install
+npm run dev
+
